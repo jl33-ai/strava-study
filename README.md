@@ -30,3 +30,7 @@ xcodebuild -project Lockin.xcodeproj -scheme Lockin -destination 'platform=iOS S
 ```
 
 To run on a device, set your team under Signing & Capabilities.
+
+## Shipping to TestFlight
+
+`./ship.sh` archives, exports, validates and uploads a build to the "Lockin: Study Tracker" record in App Store Connect (app 6823942435, team WR8US6FK26), using the App Store Connect API key in `~/.appstoreconnect/private_keys`. Raise `CURRENT_PROJECT_VERSION` in `project.yml` before each upload.
